@@ -4,15 +4,29 @@
 <title>Conniptions</title>
 </head>
 <body>
+  <style>
+    button {
+      background-image: url('button_base.jpg');
+      width: 316px;
+      height: 397px;
+    }
+    
+    button:hover {
+      background-image: url('button_lit.jpg');
+    }
+    
+    body {
+      background-color: #000;
+    }
+  </style>
+  <script>
+    function play(){
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+  </script>
 
-<script>
-  function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-</script>
-
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="conniptions.mp3" ></audio>
+  <button onclick="play()">
+  <audio id="audio" src="conniptions.mp3" ></audio>
 </body>
 </html>
