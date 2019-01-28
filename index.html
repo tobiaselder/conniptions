@@ -3,13 +3,13 @@
 <head>
   <title>Conniptions</title>
   <style type="text/css">
-    button {
+    #button {
       background-image: url('button_base.jpg');
       width: 316px;
       height: 397px;
     }
     
-    button:hover {
+    #button:hover {
       background-image: url('button_lit.jpg');
     }
     
@@ -27,7 +27,7 @@
     }
   </script>
 
-  <button onclick="play()">
+  <div id="button" onclick="play()">
   <audio id="audio" src="conniptions.mp3" ></audio>
 </body>
 </html>
